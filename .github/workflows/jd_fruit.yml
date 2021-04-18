@@ -5,8 +5,8 @@ name: jd_fruit
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '20 23,4,10 * * *'
+  schedule:                 # 时间表
+    - cron:  '30 1,9 * *'    # 每天国际时间 19 点，北京时间 3 点执行(北京+8)
   watch:
     types: started
 
